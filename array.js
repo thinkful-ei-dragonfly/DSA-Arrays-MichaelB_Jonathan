@@ -37,32 +37,47 @@ class Array{
     this.length--
     return value
   }
+
+  get(index){
+    if(index < 0 || index >= this.length) {
+      throw new Error('Index Error')
+    }
+    return memory.get(this.ptr + index)
+  }
+
 }
 function main(){
 Array.SIZE_RATIO = 3
 
 let arr = new Array()
 
-arr.push(3)
+// arr.push(3)
 
-arr.push(5)
+// arr.push(5)
  
-arr.push(15)
+// arr.push(15)
 
-arr.push(19)
+// arr.push(19)
 
-arr.push(45)
+// arr.push(45)
 
-arr.push(10)
+// arr.push(10)
 
 
-arr.pop()
+// arr.pop()
 
-arr.pop()
+// arr.pop()
 
-arr.pop()
+// arr.pop()
 
-console.log(arr)
+arr.push("tauhida");
+
+console.log(arr.get(0))
+
+arr.push(99);
+
+console.log(arr.get(1))
+
 }
 
 main()

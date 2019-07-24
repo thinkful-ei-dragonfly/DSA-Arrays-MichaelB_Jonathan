@@ -51,7 +51,9 @@ Array.SIZE_RATIO = 3
 
 let arr = new Array()
 
-// arr.push(3)
+arr.push(3)
+
+console.log(arr)
 
 // arr.push(5)
  
@@ -70,13 +72,13 @@ let arr = new Array()
 
 // arr.pop()
 
-arr.push("tauhida");
+// arr.push("tauhida");
 
-console.log(arr.get(0))
+// console.log(arr.get(0))
 
-arr.push(99);
+// arr.push(99);
 
-console.log(arr.get(1))
+// console.log(arr.get(1))
 
 }
 
